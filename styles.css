@@ -1,64 +1,13 @@
-/* Responsive Design: Media Queries */
-@media (max-width: 576px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    p {
-        font-size: 1rem;
-    }
-
-    .container {
-        width: 95%;
-        padding: 10px;
-    }
-
-    .portfolio-item {
-        padding: 10px;
-        margin-bottom: 20px;
-    }
-
-    header {
-        padding: 30px 0;
-    }
-}
-
-@media (min-width: 576px) {
-    .container {
-        width: 90%;
-    }
-}
-
-@media (min-width: 768px) {
-    .container {
-        width: 85%;
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        width: 80%;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        width: 75%;
-    }
-}
-
-/* Original Styles */
-body {
+ /* General Styles */
+ body {
     font-family: 'Cormorant Garamond', serif;
     background-color: #080808;
+    /* Vintage paper-like color */
     color: #0cf80cfa;
-    margin: 5% 0;
+    /* Dark green color for the vintage look */
+    margin: 0;
     padding: 0;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 .container {
@@ -71,17 +20,20 @@ header {
     text-align: center;
     padding: 50px 0;
     background-color: #060606;
+    /* Light gray background for header */
 }
 
 h1 {
     font-size: 3em;
     margin: 0;
     color: rgba(0, 249, 91, 0.955);
+    /* Dark green for header text */
 }
 
 h2 {
     font-size: 2em;
     color: #3bed3b;
+    /* Slightly different green for titles */
 }
 
 p {
@@ -92,11 +44,14 @@ p {
     margin-bottom: 30px;
     padding: 15px;
     border-left: 6px solid #3bed3b;
+    /* A subtle left border for style */
     transition: transform 0.3s ease;
+    /* Transition for hover effect */
 }
 
 .portfolio-item:hover {
     transform: scale(1.05);
+    /* Scale up slightly on hover */
 }
 
 a {
@@ -107,5 +62,62 @@ a {
 
 a:hover {
     color: rgb(3, 46, 238);
+    /* Darker green on hover */
 }
 
+@media (max-width: 992px) {
+    .container {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    .portfolio-item {
+        border-left: 4px solid #3bed3b;
+    }
+
+    .portfolio-item:hover {
+        transform: scale(1.02);
+    }
+}
+
+/* For very small devices */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
