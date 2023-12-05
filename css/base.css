@@ -1,0 +1,137 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+:root {
+	--color-text: #fff;
+	--color-bg: #001f3f;
+}
+
+body {
+	color: var(--color-text);
+	background-color: var(--color-bg);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
+}
+
+.background_{
+    color:#001f3f;
+}
+
+/* Page Loader */
+.js .loading::before,
+.js .loading::after {
+	content: '';
+	position: fixed;
+	z-index: 1000;
+}
+
+.js .loading::before {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--color-bg);
+}
+
+.js .loading::after {
+	top: 50%;
+	left: 50%;
+	width: 60px;
+	height: 60px;
+	margin: -30px 0 0 -30px;
+	border-radius: 50%;
+	opacity: 0.4;
+	background: var(--color-link);
+	animation: loaderAnim 0.9s linear infinite alternate forwards;
+
+}
+
+.splitting .word {
+	white-space: nowrap;
+}
+
+.line::before {
+	content: '';
+	height: 1px;
+	width: 100%;
+	background: currentColor;
+	position: absolute;
+	transition: transform 0.9s;
+	transform-origin: 0% 50%;
+}
+
+.content__title {
+	font-size: 8vw;
+	line-height: 1.25;
+	text-align: center;
+	display: grid;
+	gap: 2rem;
+}
+
+.content__title::before {
+	font-weight: 400;
+	font-family: area-normal, sans-serif;
+	display: block;
+	font-size: 1rem;
+	margin-bottom: 5vh;
+	text-align: center;
+	gap: 2rem;
+}
+
+
+.font-1 {
+	font-family: wayfinder-cf, serif;
+	font-weight: 100;
+}
+
+.font-2 {
+	font-family: campaign-serif, sans-serif;
+	font-weight: 400;
+}
+
+.font-3 {
+	font-family: area-normal, sans-serif;
+	font-weight: 600;
+}
+
+.font-6 {
+	font-family: afronaut, sans-serif;
+	font-weight: 400;
+}
+
+.font-7 {
+	font-family: hoss-round-wide, sans-serif;
+	font-weight: 400;
+}
+
+.char-wrap {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+    .content p {
+		max-width: 660px;
+		margin: 1.5rem auto;
+		font-size: 1.25rem;
+		line-height: 1.5;
+		font-weight: 600;
+		padding:2em;
+	}
+}
+
+/* Smaller screens */
+@media (max-width: 767px) {
+
+	.content p {
+        font-size: 1rem; /* Smaller font for small screens */
+        padding: 0.75rem; /* Less padding on smaller screens */
+    }
+
+}

@@ -1,0 +1,68 @@
+/* custom.css */
+@layer base {
+    .font-3 {
+      font-family: area-normal, sans-serif;
+      font-weight: 600;
+    }
+  
+    .font-6 {
+      font-family: afronaut, sans-serif;
+      font-weight: 400;
+    }
+  }
+
+  .empty-space {
+    height: 20px; /* Adjust the height to control the space below the button */
+}
+
+  .divider-container {
+    position: relative; /* Needed for absolute positioning of the button */
+    padding: 10px 0; /* Top and bottom padding for the container */
+}
+
+.green-divider {
+    border: none;
+    height: 2px;
+    background-color: rgb(9, 234, 9); /* Green color for the divider */
+    position: relative; /* Allows z-index to be set */
+    z-index: 1; /* Ensures line is behind the button */
+}
+
+.view-project-button {
+    background-color: rgb(225, 12, 12); /* Green background for the button */
+    color: white;
+    font-family: area-normal, sans-serif;
+	font-weight: 600;
+    border: 2px solid white; /* Adds a white border */
+    padding: 10px 20px;
+    cursor: pointer;
+    position: absolute; /* Absolutely position the button */
+    top: -16px; /* Adjust this value to overlap the line as desired */
+    right: 10px; /* Distance from the right end of the container */
+    z-index: 2; /* Ensures the button is above the line */
+    border-radius: 20px; /* Rounded corners for the button */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.view-project-button:hover {
+    background-color: rgb(0, 0, 0); /* Darker green on hover */
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 768px) {
+    .view-project-button {
+        padding: 8px 16px;
+        right: 10px; /* Less distance from the right on tablets */
+    }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 480px) {
+    .view-project-button {
+        padding: 5px 10px;
+        right: 5px; /* Less distance from the right on mobiles */
+        top: -15px; /* Adjust this value if needed for better mobile view */
+        font-size: 60%; /* Smaller font size for mobile devices */
+        margin-bottom: 10px;
+    }
+}
