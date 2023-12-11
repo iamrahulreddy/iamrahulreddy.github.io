@@ -7,19 +7,17 @@
 	<meta name="description" content="Muskula Rahul's Portfolio" />
 	<meta name="keywords" content="Muskula Rahul, Portfolio, Muskula's Portfolio" />
 	<meta name="author" content="Muskula Rahul" />
-	<title>Muskula Rahul</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+	
+    <title>Muskula Rahul</title>
+	
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 	<link rel="stylesheet" href="base.css" />
-    <link rel="icon" href="logo.png" type="image/x-icon">
+	<link rel="icon" href="logo.png" type="image/x-icon">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
 </head>
-<style>
-	.card
-	{
-		opacity: 0;
-		transform: translateY(20px);
-	}
-</style>
 
 <body class="bg-black text-white font-body">
 	<nav class="text-white bg-red-600">
@@ -58,45 +56,43 @@
 				<i class="fas fa-envelope mr-2"></i>Contact</a>
 		</div>
 	</nav>
-
-    <section id="about_me">
-        <div class="container mt-8 mx-auto px-4 sm:px-4 lg:px-8">
-            <h3 class="mb-4 text-2xl font-semibold text-red-600">Hello,there!!</h3>
-            <h3 class="mb-4 text-2xl font-semibold text-red-600">Welcome To My Portfolio</h3>
-            <p class="text-lg">I'm excited to have you here, ready to share my journey through the fascinating world of technology and innovation. Whether you're a fellow enthusiast, a potential collaborator, or simply curious, I invite you to explore the diverse range of work showcased here.</p>
-        </div>
-    </section>
-
+	<section id="about_me">
+		<div class="container mt-8 mx-auto px-4 sm:px-4 lg:px-8">
+			<h3 class="mb-4 text-2xl font-semibold text-red-600">Hello,there!!</h3>
+			<h3 class="mb-4 text-2xl font-semibold text-red-600">Welcome To My Portfolio</h3>
+			<p class="text-lg">I'm excited to have you here, ready to share my journey through the fascinating world of technology and innovation. Whether you're a fellow enthusiast, a potential collaborator, or simply curious, I invite you to explore the diverse range of work showcased here.</p>
+		</div>
+	</section>
 	<!-- Music Playlist-like Gradient Themes Section -->
 	<section id="nav-projects">
 		<div class="container mx-auto py-10">
-            <div class="mb-6 text-lg">
-                <button class="rounded-full bg-red-600 px-4 py-2 text-white font-1 transition duration-300 ease-in-out transform hover:scale-105 hover:bg-red-500">
-                    <i class="fas fa-folder-open mr-3"></i>Projects</button>
-            </div>			
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
+			<div class="mb-6 text-lg">
+				<button class="rounded-full bg-red-600 px-4 py-2 text-white font-1 transition duration-300 ease-in-out transform hover:scale-105 hover:bg-red-500">
+					<i class="fas fa-folder-open mr-3"></i>Projects</button>
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-5">
 				<!-- Gradient Blue-Purple Theme Card -->
-				<div class="p-6 gradient-blue-purple rounded-md card">
+				<div class="p-6 gradient-blue-purple rounded-md project-card">
 					<h3 class="text-white font-semibold mb-3">Neural Style Transfer</h3>
 					<p class="text-white">Neural Style Transfer is a computer vision technique that combines the content of one image with the artistic style of another. Using deep neural networks, it reimagines photographs or images by transferring the visual characteristics of famous artworks or styles onto them, creating visually striking and artistic compositions.</p>
 				</div>
 				<!-- Gradient Gray Theme Card -->
-				<div class="p-6 gradient-gray rounded-md card">
+				<div class="p-6 gradient-gray rounded-md project-card">
 					<h3 class="text-white font-semibold mb-3">Inference Engine</h3>
 					<p class="text-black">An inference engine is a crucial component in artificial intelligence systems. It processes input data based on predefined rules and knowledge to make logical deductions and generate meaningful output. It plays a key role in decision-making, reasoning, and problem-solving within AI applications like expert systems and knowledge-based systems.</p>
 				</div>
 				<!-- Gradient Orange-Pink Theme Card -->
-				<div class="p-6 gradient-orange-pink rounded-md card">
+				<div class="p-6 gradient-orange-pink rounded-md project-card">
 					<h3 class="text-white font-semibold mb-3">AI ChatBot Using LLM</h3>
 					<p class="text-white">This project aims to develop an AI-powered chatbot that leverages a Large Language Model (LLM) to provide intelligent responses to user inquiries and perform various tasks. The chatbot will be capable of understanding and generating natural language text, making it a versatile tool for a wide range of applications.</p>
 				</div>
 				<!-- Gradient Cyan-Blue Theme Card -->
-				<div class="p-6 gradient-cyan-blue rounded-md card">
+				<div class="p-6 gradient-cyan-blue rounded-md project-card project-card">
 					<h3 class="text-white font-semibold mb-3">Text Extraction With Sequence Model</h3>
 					<p class="text-white">Text extraction with a sequence model involves using deep learning techniques, such as recurrent neural networks (RNNs) or transformers, to identify and extract structured information from unstructured text data. This can include tasks like named entity recognition, sentiment analysis, or extracting key information from documents, enabling automated content analysis and information retrieval.</p>
 				</div>
 				<!-- Gradient Red-Orange Theme Card -->
-				<div class="p-6 gradient-red-orange rounded-md card">
+				<div class="p-6 gradient-red-orange rounded-md project-card">
 					<h3 class="text-white font-semibold mb-3">Automated Ticketing System</h3>
 					<p class="text-white">Automated Ticketing System project focuses on creating a system that streamlines and enhances the efficiency of IT support by using automation and artificial intelligence. This project is technically challenging but offers significant benefits in terms of improving the efficiency and effectiveness of IT support services. It's also a great opportunity to delve into areas like AI, machine learning, and user experience design.</p>
 				</div>
@@ -126,24 +122,30 @@
 		</div>
 		</div>
 	</footer>
-	<!-- GSAP Animation Library -->
-	<script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
-	<script>
-		document.addEventListener("DOMContentLoaded", function()
-		{
-			// Create a GSAP timeline
-			const timeline = gsap.timeline();
-			// Stagger the animations for each card
-			timeline.staggerTo(".card", 1,
-			{
-				opacity: 1,
-				transform: "translateY(0)",
-				ease: "power4.out",
-			}, 0.5); // Adjust the stagger value as needed
-			// Animate navigation links
-		});
-	</script>
-	<script src="script.js"></script>
+	<!-- GSAP and ScrollTrigger Scripts -->
+    <script src="https://unpkg.com/gsap@3.9.2/dist/ScrollTrigger.min.js"></script>
+<!-- Your Custom Script -->
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+      const projectCards = document.querySelectorAll(".project-card");
+      projectCards.forEach((card) => {
+         gsap.from(card, {
+            opacity: 0,
+            y: 50,
+            scrollTrigger: {
+               trigger: card,
+               start: "top 50%",
+               end: "bottom 50%",
+               toggleActions: "play none none reverse",
+            },
+         });
+      });
+   });
+</script>
+
+<!-- Other Scripts -->
+<script src="script.js"></script>
+
 </body>
 
 </html>
