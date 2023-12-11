@@ -9,51 +9,150 @@
 	<meta name="author" content="Muskula Rahul" />
 	<title>Muskula Rahul</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 	<link rel="stylesheet" href="base.css" />
+    <link rel="icon" href="logo.png" type="image/x-icon">
 </head>
+<style>
+	.card
+	{
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	.nav-link
+	{
+		cursor: pointer;
+		transition: color 0.3s;
+	}
+
+	.nav-link:hover
+	{
+		color: #f8f8f8;
+		/* Change the color on hover */
+	}
+</style>
 
 <body class="bg-black text-white font-body">
-	<header class="bg-black py-6">
-		<div class="container mx-auto">
-			<div class="flex justify-between items-center">
-				<a class="text-2xl font-bold font-heading text-lg" href="#">My Portfolio</a>
-				<button class="py-2 px-5 spotify-green text-white rounded-full hover:opacity-90 font-semibold text-lg">Hire Me</button>
+	<nav class="text-white bg-red-600">
+		<div class="container mx-auto flex items-center justify-between px-6 py-4">
+			<!-- Logo or Brand Name -->
+			<a href="#" class="hover:underline text-xl">Muskula Rahul</a>
+			<!-- Navigation Links for large screens with Icons -->
+			<div class="hidden md:flex space-x-6">
+				<a href="#projects" class="flex items-center">
+					<i class="fas fa-folder-open mr-2"></i>Projects</a>
+				<a href="resume.pdf" class="flex items-center">
+					<i class="fas fa-file-alt mr-2"></i>Resume</a>
+				<a href="#certifications" class="flex items-center">
+					<i class="fas fa-certificate mr-2"></i>Certifications</a>
+				<a href="#contact" class="flex items-center">
+					<i class="fas fa-envelope mr-2"></i>Contact</a>
+			</div>
+			<!-- Hamburger Menu for small screens -->
+			<div class="md:hidden">
+				<button id="menu-toggle" class="rounded-full bg-gray-800 p-2 text-white font-3">
+					<div class="md:hidden">
+						<i class="fa-regular fa-compass fa-spin"></i> Menu
+					</div>
+				</button>
 			</div>
 		</div>
-	</header>
+		<!-- Mobile Menu with Icons -->
+		<div class="absolute z-10 hidden w-full bg-red-600 shadow-md md:hidden" id="mobile-menu">
+			<a href="#projects" class="block px-6 py-2 transition duration-300">
+				<i class="fas fa-folder-open mr-2"></i>Projects</a>
+			<a href="resume.pdf" class="block px-6 py-2 transition duration-300">
+				<i class="fas fa-file-alt mr-2"></i>Resume</a>
+			<a href="#certifications" class="block px-6 py-2 transition duration-300">
+				<i class="fas fa-certificate mr-2"></i>Certifications</a>
+			<a href="#contact" class="block px-6 py-2 transition duration-300">
+				<i class="fas fa-envelope mr-2"></i>Contact</a>
+		</div>
+	</nav>
 	<!-- Music Playlist-like Gradient Themes Section -->
-	<section class="py-10">
-		<div class="container mx-auto">
-			<h2 class="text-3xl mb-5">Projects</h2>
-			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+	<section id="projects">
+		<div class="container mx-auto py-10">
+            <div class="mb-6 text-lg">
+                <button class="rounded-full bg-red-600 px-4 py-2 text-white font-1 transition duration-300 ease-in-out transform hover:scale-105 hover:bg-red-500">
+                    <i class="fas fa-folder-open mr-3"></i>Projects</button>
+            </div>			
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
 				<!-- Gradient Blue-Purple Theme Card -->
-				<div class="p-6 gradient-blue-purple rounded-md">
+				<div class="p-6 gradient-blue-purple rounded-md card">
 					<h3 class="text-white font-semibold mb-3">Neural Style Transfer</h3>
 					<p class="text-white opacity-100">Neural Style Transfer is a computer vision technique that combines the content of one image with the artistic style of another. Using deep neural networks, it reimagines photographs or images by transferring the visual characteristics of famous artworks or styles onto them, creating visually striking and artistic compositions.</p>
 				</div>
 				<!-- Gradient Gray Theme Card -->
-				<div class="p-6 gradient-gray rounded-md">
+				<div class="p-6 gradient-gray rounded-md card">
 					<h3 class="text-white font-semibold mb-3">Inference Engine</h3>
 					<p class="text-black opacity-100">An inference engine is a crucial component in artificial intelligence systems. It processes input data based on predefined rules and knowledge to make logical deductions and generate meaningful output. It plays a key role in decision-making, reasoning, and problem-solving within AI applications like expert systems and knowledge-based systems.</p>
 				</div>
 				<!-- Gradient Orange-Pink Theme Card -->
-				<div class="p-6 gradient-orange-pink rounded-md">
+				<div class="p-6 gradient-orange-pink rounded-md card">
 					<h3 class="text-white font-semibold mb-3">AI ChatBot Using LLM</h3>
 					<p class="text-white opacity-100">This project aims to develop an AI-powered chatbot that leverages a Large Language Model (LLM) to provide intelligent responses to user inquiries and perform various tasks. The chatbot will be capable of understanding and generating natural language text, making it a versatile tool for a wide range of applications.</p>
 				</div>
 				<!-- Gradient Cyan-Blue Theme Card -->
-				<div class="p-6 gradient-cyan-blue rounded-md">
+				<div class="p-6 gradient-cyan-blue rounded-md card">
 					<h3 class="text-white font-semibold mb-3">Text Extraction With Sequence Model</h3>
 					<p class="text-white opacity-100">Text extraction with a sequence model involves using deep learning techniques, such as recurrent neural networks (RNNs) or transformers, to identify and extract structured information from unstructured text data. This can include tasks like named entity recognition, sentiment analysis, or extracting key information from documents, enabling automated content analysis and information retrieval.</p>
 				</div>
 				<!-- Gradient Red-Orange Theme Card -->
-				<div class="p-6 gradient-red-orange rounded-md">
+				<div class="p-6 gradient-red-orange rounded-md card">
 					<h3 class="text-white font-semibold mb-3">Automated Ticketing System</h3>
 					<p class="text-white opacity-100">Automated Ticketing System project focuses on creating a system that streamlines and enhances the efficiency of IT support by using automation and artificial intelligence. This project is technically challenging but offers significant benefits in terms of improving the efficiency and effectiveness of IT support services. It's also a great opportunity to delve into areas like AI, machine learning, and user experience design.</p>
 				</div>
 			</div>
 		</div>
 	</section>
+	<footer id="contact" class="mx-auto px-4 py-12 sm:px-6 lg:px-8">
+		<div class="mb-6 text-lg">
+			<button class="rounded-full bg-red-600 px-4 py-2 text-white font-1 transition duration-300 ease-in-out transform hover:scale-105 hover:bg-red-500">
+				<i class="fas fa-envelope mr-3"></i>Reach Out</button>
+		</div>
+		<p class="mb-4 text-white text-lg">I'm always happy to hear from you, whether you have a question, a comment, or a project idea. You can reach me by email, phone, or through any of my social media accounts. I'll get back to you as soon as possible. Thank you for visiting my portfolio website. I hope you enjoyed my work and learned something new. Have a great day! 😊</p>
+		<p class="mb-2 flex items-center">
+			<i class="far fa-envelope mr-2 text-blue-400"></i>
+			<a href="mailto:your.email@example.com" class="text-white font-3 hover:underline">your.email@example.com</a>
+		</p>
+		<p class="flex items-center mb-4">
+			<i class="fas fa-phone-alt mr-2 text-green-400"></i>
+			<a href="tel:+1234567890" class="text-white hover:underline">+123 456 7890</a>
+		</p>
+		<div class="flex font-3 space-x-4">
+			<!-- Social Media Icons -->
+			<a href="https://github.com/yourusername" class="text-white hover:underline"> <i class="fab fa-github"></i> GitHub </a>
+			<a href="https://linkedin.com/in/yourusername" class="text-white hover:underline"> <i class="fab fa-linkedin"></i> LinkedIn </a>
+			<a href="https://medium.com/@yourusername" class="text-white hover:underline"> <i class="fab fa-medium"></i> Medium </a>
+			<a href="https://www.coursera.org/user/yourusername" class="text-white hover:underline"> <i class="fas fa-graduation-cap"></i> Coursera </a>
+		</div>
+		</div>
+	</footer>
+	<!-- GSAP Animation Library -->
+	<script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function()
+		{
+			// Create a GSAP timeline
+			const timeline = gsap.timeline();
+			// Stagger the animations for each card
+			timeline.staggerTo(".card", 1,
+			{
+				opacity: 1,
+				transform: "translateY(0)",
+				ease: "power4.out",
+			}, 0.5); // Adjust the stagger value as needed
+			// Animate navigation links
+			timeline.staggerTo(".nav-link", 0.5,
+			{
+				opacity: 1,
+				y: 0,
+				ease: "power4.out",
+			}, 0.2, "-=1"); // Adjust the stagger value and delay as needed
+		});
+	</script>
+	<script src="script.js"></script>
 </body>
 
 </html>
