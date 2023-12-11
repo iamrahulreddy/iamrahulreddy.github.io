@@ -1,68 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Muskula Rahul's Portfolio" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Muskula Rahul's Portfolio" />
 	<meta name="keywords" content="Muskula Rahul, Portfolio, Muskula's Portfolio" />
 	<meta name="author" content="Muskula Rahul" />
-
-    <title>Muskula Rahul</title>
-    
-    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.3.1/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="base.css" />
+	<title>Muskula Rahul</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+	<link rel="stylesheet" href="base.css" />
 </head>
+
 <body class="bg-black text-white font-body">
-    <header class="bg-black py-6 animate__animated animate__fadeInDown">
-        <div class="container mx-auto" data-aos="fade-up" data-aos-delay="10">
-            <div class="flex justify-between items-center" data-aos="fade-up" data-aos-delay="100">
-                <a class="text-2xl font-bold font-heading text-lg transition transform hover:scale-105" href="#">My Portfolio</a>
-                <button class="py-2 px-5 spotify-green text-white rounded-full hover:opacity-90 font-semibold text-lg transition transform hover:scale-105">Hire Me</button>
-            </div>
-        </div>
-    </header>
-
-    <!-- Music Playlist-like Gradient Themes Section -->
-    <section class="py-10" data-aos="fade-up" data-aos-delay="200">
-        <div class="container mx-auto" data-aos="fade-up" data-aos-delay="300">
-            <h2 class="text-3xl mb-5">Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" data-aos="fade-up" data-aos-delay="400">
-                <!-- Gradient Blue-Purple Theme Card -->
-                <div class="p-6 gradient-blue-purple rounded-md animate__animated animate__fadeInUp">
-                    <h3 class="text-white font-semibold mb-3">Neural Style Transfer</h3>
-                    <p class="text-white opacity-100">Neural Style Transfer is a computer vision technique that combines the content of one image with the artistic style of another. Using deep neural networks, it reimagines photographs or images by transferring the visual characteristics of famous artworks or styles onto them, creating visually striking and artistic compositions.</p>
-                </div>
-                <!-- Gradient Gray Theme Card -->
-                <div class="p-6 gradient-gray rounded-md animate__animated animate__fadeInUp">
-                    <h3 class="text-black font-semibold mb-3">Inference Engine</h3>
-                    <p class="text-black opacity-100">An inference engine is a crucial component in artificial intelligence systems. It processes input data based on predefined rules and knowledge to make logical deductions and generate meaningful output. It plays a key role in decision-making, reasoning, and problem-solving within AI applications like expert systems and knowledge-based systems.</p>
-                </div>
-                <!-- Gradient Orange-Pink Theme Card -->
-                <div class="p-6 gradient-orange-pink rounded-md animate__animated animate__fadeInUp">
-                    <h3 class="text-white font-semibold mb-3">AI ChatBot Using LLM</h3>
-                    <p class="text-white opacity-100">This project aims to develop an AI-powered chatbot that leverages a Large Language Model (LLM) to provide intelligent responses to user inquiries and perform various tasks. The chatbot will be capable of understanding and generating natural language text, making it a versatile tool for a wide range of applications.</p>
-                </div>
-                <!-- Gradient Cyan-Blue Theme Card -->
-                <div class="p-6 gradient-cyan-blue rounded-md animate__animated animate__fadeInUp">
-                    <h3 class="text-white font-semibold mb-3">Text Extraction With Sequence Model</h3>
-                    <p class="text-white opacity-100">Text extraction with a sequence model involves using deep learning techniques, such as recurrent neural networks (RNNs) or transformers, to identify and extract structured information from unstructured text data. This can include tasks like named entity recognition, sentiment analysis, or extracting key information from documents, enabling automated content analysis and information retrieval.</p>
-                </div>
-                <!-- Gradient Red-Orange Theme Card -->
-                <div class="p-6 gradient-red-orange rounded-md animate__animated animate__fadeInUp">
-                <h3 class="text-white font-semibold mb-3">Automated Ticketing System</h3>
-                <p class="text-white opacity-100">Automated Ticketing System project focuses on creating a system that streamlines and enhances the efficiency of IT support by using automation and artificial intelligence. This project is technically challenging but offers significant benefits in terms of improving the efficiency and effectiveness of IT support services. It's also a great opportunity to delve into areas like AI, machine learning, and user experience design.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+	<header class="bg-black py-6">
+		<div class="container mx-auto">
+			<div class="flex justify-between items-center">
+				<a class="text-2xl font-bold font-heading text-lg" href="#">My Portfolio</a>
+				<button class="py-2 px-5 spotify-green text-white rounded-full hover:opacity-90 font-semibold text-lg">Hire Me</button>
+			</div>
+		</div>
+	</header>
+	<!-- Music Playlist-like Gradient Themes Section -->
+	<section class="py-10">
+		<div class="container mx-auto">
+			<h2 class="text-3xl mb-5">Projects</h2>
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+				<!-- Gradient Blue-Purple Theme Card -->
+				<div class="p-6 gradient-blue-purple rounded-md">
+					<h3 class="text-white font-semibold mb-3">Neural Style Transfer</h3>
+					<p class="text-white opacity-100">Neural Style Transfer is a computer vision technique that combines the content of one image with the artistic style of another. Using deep neural networks, it reimagines photographs or images by transferring the visual characteristics of famous artworks or styles onto them, creating visually striking and artistic compositions.</p>
+				</div>
+				<!-- Gradient Gray Theme Card -->
+				<div class="p-6 gradient-gray rounded-md">
+					<h3 class="text-white font-semibold mb-3">Inference Engine</h3>
+					<p class="text-black opacity-100">An inference engine is a crucial component in artificial intelligence systems. It processes input data based on predefined rules and knowledge to make logical deductions and generate meaningful output. It plays a key role in decision-making, reasoning, and problem-solving within AI applications like expert systems and knowledge-based systems.</p>
+				</div>
+				<!-- Gradient Orange-Pink Theme Card -->
+				<div class="p-6 gradient-orange-pink rounded-md">
+					<h3 class="text-white font-semibold mb-3">AI ChatBot Using LLM</h3>
+					<p class="text-white opacity-100">This project aims to develop an AI-powered chatbot that leverages a Large Language Model (LLM) to provide intelligent responses to user inquiries and perform various tasks. The chatbot will be capable of understanding and generating natural language text, making it a versatile tool for a wide range of applications.</p>
+				</div>
+				<!-- Gradient Cyan-Blue Theme Card -->
+				<div class="p-6 gradient-cyan-blue rounded-md">
+					<h3 class="text-white font-semibold mb-3">Text Extraction With Sequence Model</h3>
+					<p class="text-white opacity-100">Text extraction with a sequence model involves using deep learning techniques, such as recurrent neural networks (RNNs) or transformers, to identify and extract structured information from unstructured text data. This can include tasks like named entity recognition, sentiment analysis, or extracting key information from documents, enabling automated content analysis and information retrieval.</p>
+				</div>
+				<!-- Gradient Red-Orange Theme Card -->
+				<div class="p-6 gradient-red-orange rounded-md">
+					<h3 class="text-white font-semibold mb-3">Automated Ticketing System</h3>
+					<p class="text-white opacity-100">Automated Ticketing System project focuses on creating a system that streamlines and enhances the efficiency of IT support by using automation and artificial intelligence. This project is technically challenging but offers significant benefits in terms of improving the efficiency and effectiveness of IT support services. It's also a great opportunity to delve into areas like AI, machine learning, and user experience design.</p>
+				</div>
+			</div>
+		</div>
+	</section>
 </body>
+
 </html>
