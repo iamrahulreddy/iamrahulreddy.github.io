@@ -22,10 +22,6 @@
 	background: linear-gradient(45deg, #FF4500, #FF6347);
 }
 
-.font-heading {
-	font-family: 'Montserrat', sans-serif;
-}
-
 .font-body {
 	font-family: 'Open Sans', sans-serif;
 }
@@ -34,32 +30,8 @@
 	color: #000000;
 }
 
-.bg-primary {
-	background-color: #001f3f;;
-}
-
-.bg-secondary {
-	background-color: #A0A0A0;
-}
-
-.bg-white {
-	background-color: #FFFFFF;
-}
-
 .bg-black {
 	background-color:#000000;
-}
-
-.border-primary {
-	border-color: #00ff00;
-}
-
-.border-secondary {
-	border-color: #A0A0A0;
-}
-
-.border-white {
-	border-color: #FFFFFF;
 }
 
 .border-black {
