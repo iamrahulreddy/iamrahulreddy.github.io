@@ -19,18 +19,6 @@
 		opacity: 0;
 		transform: translateY(20px);
 	}
-
-	.nav-link
-	{
-		cursor: pointer;
-		transition: color 0.3s;
-	}
-
-	.nav-link:hover
-	{
-		color: #f8f8f8;
-		/* Change the color on hover */
-	}
 </style>
 
 <body class="bg-black text-white font-body">
@@ -40,13 +28,13 @@
 			<a href="#" class="hover:underline text-xl">Muskula Rahul</a>
 			<!-- Navigation Links for large screens with Icons -->
 			<div class="hidden md:flex space-x-6">
-				<a href="#projects" class="flex items-center">
+				<a href="#nav-projects" class="flex items-center">
 					<i class="fas fa-folder-open mr-2"></i>Projects</a>
 				<a href="resume.pdf" class="flex items-center">
 					<i class="fas fa-file-alt mr-2"></i>Resume</a>
-				<a href="#certifications" class="flex items-center">
+				<a href="#nav-certifications" class="flex items-center">
 					<i class="fas fa-certificate mr-2"></i>Certifications</a>
-				<a href="#contact" class="flex items-center">
+				<a href="#nav-contact" class="flex items-center">
 					<i class="fas fa-envelope mr-2"></i>Contact</a>
 			</div>
 			<!-- Hamburger Menu for small screens -->
@@ -60,18 +48,27 @@
 		</div>
 		<!-- Mobile Menu with Icons -->
 		<div class="absolute z-10 hidden w-full bg-red-600 shadow-md md:hidden" id="mobile-menu">
-			<a href="#projects" class="block px-6 py-2 transition duration-300">
+			<a href="#nav-projects" class="block px-6 py-2 transition duration-300">
 				<i class="fas fa-folder-open mr-2"></i>Projects</a>
 			<a href="resume.pdf" class="block px-6 py-2 transition duration-300">
 				<i class="fas fa-file-alt mr-2"></i>Resume</a>
-			<a href="#certifications" class="block px-6 py-2 transition duration-300">
+			<a href="#nav-certifications" class="block px-6 py-2 transition duration-300">
 				<i class="fas fa-certificate mr-2"></i>Certifications</a>
-			<a href="#contact" class="block px-6 py-2 transition duration-300">
+			<a href="#nav-contact" class="block px-6 py-2 transition duration-300">
 				<i class="fas fa-envelope mr-2"></i>Contact</a>
 		</div>
 	</nav>
+
+    <section id="about_me">
+        <div class="container mt-8 mx-auto px-4 sm:px-4 lg:px-8">
+            <h3 class="mb-4 text-2xl font-semibold text-red-600">Hello,there!!</h3>
+            <h3 class="mb-4 text-2xl font-semibold text-red-600">Welcome To My Portfolio</h3>
+            <p class="text-lg">I'm excited to have you here, ready to share my journey through the fascinating world of technology and innovation. Whether you're a fellow enthusiast, a potential collaborator, or simply curious, I invite you to explore the diverse range of work showcased here.</p>
+        </div>
+    </section>
+
 	<!-- Music Playlist-like Gradient Themes Section -->
-	<section id="projects">
+	<section id="nav-projects">
 		<div class="container mx-auto py-10">
             <div class="mb-6 text-lg">
                 <button class="rounded-full bg-red-600 px-4 py-2 text-white font-1 transition duration-300 ease-in-out transform hover:scale-105 hover:bg-red-500">
@@ -106,7 +103,7 @@
 			</div>
 		</div>
 	</section>
-	<footer id="contact" class="mx-auto px-4 py-12 sm:px-6 lg:px-8">
+	<footer id="nav-contact" class="mx-auto px-4 py-12 sm:px-6 lg:px-8">
 		<div class="mb-6 text-lg">
 			<button class="rounded-full bg-red-600 px-4 py-2 text-white font-1 transition duration-300 ease-in-out transform hover:scale-105 hover:bg-red-500">
 				<i class="fas fa-envelope mr-3"></i>Reach Out</button>
@@ -144,12 +141,6 @@
 				ease: "power4.out",
 			}, 0.5); // Adjust the stagger value as needed
 			// Animate navigation links
-			timeline.staggerTo(".nav-link", 0.5,
-			{
-				opacity: 1,
-				y: 0,
-				ease: "power4.out",
-			}, 0.2, "-=1"); // Adjust the stagger value and delay as needed
 		});
 	</script>
 	<script src="script.js"></script>
